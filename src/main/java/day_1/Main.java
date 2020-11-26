@@ -18,5 +18,8 @@ public class Main {
 
         user.addBook(book);
         System.out.println(user.toString());
+
+        book.setCurrentUser(user);
+        System.out.println(book.toString());
     }
 }

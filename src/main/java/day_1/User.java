@@ -8,6 +8,7 @@ public class User {
     private String firstName;
     private String lastName;
     private List<Book> bookList = new ArrayList<Book>();
+
     //private Book[] bookList;
 
 
@@ -17,7 +18,7 @@ public class User {
         this.lastName = lastName;
     }
 
-    public String addBook(Book book) {
+    String addBook(Book book) {
         bookList.add(book);
         return "book added";
     }

@@ -8,13 +8,24 @@ public class Book {
     private boolean available = true;
     private Author author;
     private Author[] additionalAuthors;
+    private User currentUser;
 
     public Book(int id, String title) {
         this.id = id;
         this.title = title;
     }
 
-    public Book(int id, String title, Author author) {
+    public User getCurrentUser() {
+        return currentUser;
+    }
+
+    void setCurrentUser(User currentUser) {
+        this.currentUser = currentUser;
+        available = false;
+        currentUser.addBook(this);
+    }
+
+    Book(int id, String title, Author author) {
         this.id = id;
         this.title = title;
         this.author = author;
