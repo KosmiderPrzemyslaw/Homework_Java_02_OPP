@@ -1,6 +1,7 @@
 package day_1;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class Book {
     private int id;
@@ -9,6 +10,7 @@ public class Book {
     private Author author;
     private Author[] additionalAuthors;
     private User currentUser;
+    private int popularity = 0;
 
     public Book(int id, String title) {
         this.id = id;
@@ -22,6 +24,7 @@ public class Book {
     void setCurrentUser(User currentUser) {
         this.currentUser = currentUser;
         available = false;
+        popularity++;
         currentUser.addBook(this);
     }
 
@@ -37,6 +40,12 @@ public class Book {
         this.author = author;
         this.additionalAuthors = additionalAuthors;
     }
+
+    public boolean equals(Book book) {
+        int bookId = book.getId();
+        return id == bookId;
+    }
+
 
     public int getId() {
         return id;

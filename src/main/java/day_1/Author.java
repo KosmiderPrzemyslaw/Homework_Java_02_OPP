@@ -1,6 +1,8 @@
 package day_1;
 
-public class Author {
+import day_2.Person;
+
+public class Author extends Person {
     private int id;
     private String authorName;
     private String lastName;

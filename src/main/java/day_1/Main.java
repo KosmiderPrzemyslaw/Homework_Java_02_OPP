@@ -21,5 +21,9 @@ public class Main {
 
         book.setCurrentUser(user);
         System.out.println(book.toString());
+
+       user.returnBook(book);
+
+        System.out.println("user getBookList " + user.getBookList());
     }
 }
