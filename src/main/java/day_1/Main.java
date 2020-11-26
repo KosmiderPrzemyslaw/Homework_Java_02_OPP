@@ -7,8 +7,16 @@ public class Main {
         bankAccount.withdrawCash(2);
         bankAccount.printInfo();
         System.out.println(bankAccount.getCash());
+
         System.out.println(bankAccount.getNumber());
         System.out.println(bankAccount.printInfo());
 
+
+        Author author = new Author(1, "Jan", "Brzechwa", "Janu");
+        Book book = new Book(1, "Pod zielonym ogórkiem", author);
+        User user = new User(1, "Konrad", "Mostowiak");
+
+        user.addBook(book);
+        System.out.println(user.toString());
     }
 }
