@@ -89,7 +89,7 @@ public class Book {
 
     @Override
     public String toString() {
-        return "Book{" +
+        return "Cat{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", available=" + available +

@@ -1,5 +1,7 @@
 package day_1;
 
+import day_2.Cat;
+
 public class Main {
     public static void main(String[] args) {
         BankAccount bankAccount = new BankAccount(1);
@@ -26,4 +28,6 @@ public class Main {
 
         System.out.println("user getBookList " + user.getBookList());
     }
+
+
 }

@@ -11,7 +11,7 @@ public class User extends Person {
     private String lastName;
     private List<Book> bookList = new ArrayList<Book>();
 
-    //private Book[] bookList;
+    //private Cat[] bookList;
 
 
     public User(int id, String firstName, String lastName) {
